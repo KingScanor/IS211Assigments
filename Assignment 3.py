@@ -44,7 +44,7 @@ def analyze_image_requests(log_entries):
     print(f"Image requests account for {image_percentage:.1f}% of all requests")
 
 def find_most_popular_browser(log_entries):
-    """Fidns the most popular browser"""
+    """Finds the most popular browser"""
     browser_counts = {}
     for entry in log_entries:
         if "Firefox" in entry["browser"]:
