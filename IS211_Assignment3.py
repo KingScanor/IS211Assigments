@@ -37,7 +37,7 @@ def analyze_image_requests(log_entries):
     total_hits = len(log_entries)
 
     for entry in log_entries:
-        if re.search(r"\.(jpg|gif|png)$", entry ["path"]):
+        if re.search(r"\.(jpg|gif|png)$", entry ["path"], re.IGNORECASE):
             image_hits += 1
 
     image_percentage = (image_hits/ total_hits) * 100
