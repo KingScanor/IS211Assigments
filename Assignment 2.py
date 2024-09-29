@@ -68,7 +68,7 @@ if csv_content:
     data_dict = processData(csv_content)
 
     # Show information for a specific ID.
-    displayPerson(15, data_dict)
+    displayPerson(50, data_dict)
 
 else:
     print("Failed to download data.")
