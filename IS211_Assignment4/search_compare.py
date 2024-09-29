@@ -3,12 +3,13 @@ import random
 
 
 def get_me_random_list(n):
-    """Generate a list of n random numbers"""
-    mylist = []
-    for i in range(n):
-        mylist.append(random.randint(0, 100000000))
-    return mylist
+    """Generate list of n elements in random order
 
+    :params: n: Number of elements in the list
+    :returns: A list with n elements in random order"""
+    a_list = list(range(n))
+    random.shuffle(a_list)
+    return a_list
 
 def sequential_search(a_list, item):
     pos = 0
