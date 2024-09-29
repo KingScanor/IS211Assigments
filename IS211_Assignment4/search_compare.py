@@ -11,6 +11,7 @@ def get_me_random_list(n):
     random.shuffle(a_list)
     return a_list
 
+
 def sequential_search(a_list, item):
     pos = 0
     found = False
