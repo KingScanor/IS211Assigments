@@ -92,7 +92,7 @@ if __name__ == "__main__":
         for i in range(100):
             mylist500 = get_me_random_list(the_size)
             start = time.time()
-            shellSort(mylist500)
+            shellSort(mylist500)  
             time_spent = time.time() - start
             total_time += time_spent
 
